@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<table border="1">
+    {% for class in human_db %}
+    <tr>
+        <th>{{class}}</th>
+        <tc>
+            {% for human in human_db[class] %}
+            <td align="left">
+                <ol>
+                    {{human[0]}}  {{human[1]}}  
+                </ol>
+            </td>
+            {% endfor %}
+        </tc>
+    </tr>
+    {% endfor %}
+</table>
+</html>

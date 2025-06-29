@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spongebob Squarepants</title>
+    <style>
+      .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap:10px;
+        border:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="POST" enctype="multipart/form-data">
+    <h2>User Information Form</h2>
+
+    <label for="username">username:</label><br />
+    <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="Spongebob"
+        /><br /><br />
+
+     <label for="password">password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="email">email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="spongebob@gmail.com"
+      /><br /><br />
+
+      <label for="phone">phone number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      /><br /><br />
+
+      <label for="bday">birth date:</label><br />
+      <input type="date" id="bday" name="bday" /><br /><br />
+
+      <label for="quantity">quantity:</label><br />
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="0"
+        max="99"
+        value="1"
+      /><br /><br />
+
+      <div class="container">
+        <label for="title">title:</label><br />
+        <input type="radio" id="mr" name="title" value="mr" /> <br />
+        <label for="mr">Mr.</label><br />
+        <input type="radio" id="miss" name="title" value="miss" /> <br />
+        <label for="miss">Miss</label><br />
+        <input type="radio" id="phd" name="title" value="phd" /> <br />
+        <label for="phd">PhD</label>
+      </div>
+
+      <label for="payment">payment:</label><br />
+      <select id="payment" name="payment">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="giftcard">Gift Card</option></select
+      ><br /><br />
+
+      <input type="checkbox" id="subscribed" name="subscribed" />
+      <label for="subscribed">subscribe</label><br /><br />
+
+      <label for="comment">comment:</label><br />
+      <textarea id="comment" name="comment" rows="3" cols="25"></textarea
+      ><br /><br />
+
+      <label for="file">upload file:</label><br />
+      <input
+        type="file"
+        id="file"
+        name="file"
+        accept="image/png, image/jpeg"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
