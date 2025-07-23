@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Query Display</title>
+    </head>
+    <body>
+        <center>
+            <h1>Query Result</h1>
+            {% if not data_set %}
+                <p>No data found for Competitor ID: {{ competitor_id }}</p>
+            {% else %}
+            <h1>Query Result for {{ competitor_id }}</h1>
+            <table border="1" width="500px" height="300px">
+                <tr align="center">
+                    <th>Competitor ID</th>
+                    <th width="100">Scores</th>
+                    <th>Mean Score</th>
+                    <th>Qualified</th>
+                </tr>
+                <tr align="center">
+                    <td>{{ data_set[0] }}</td>
+                    <td>
+                        {% for score in data_set[1] %}
+                        <table>
+                            <td>Round {{data_set[1].index(score) + 1}}:  {{ score }}</td>
+                        </table>
+                        {% endfor %}
+                    </td>
+                    <td>{{ data_set[2] }}</td>
+                    <td>{{ data_set[3] }}</td>
+                </tr>
+            </table>
+            {% endif %}
+        </center>
+</html>

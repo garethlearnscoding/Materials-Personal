@@ -2,7 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Qualifiers</title>
+    {% if Title %}
+        <title>{{Title}}</title>
+    {% else %}
+        <title>Round</title>
+    {% endif %}
 </head>
 <body>
     <center>
@@ -11,9 +15,9 @@
             <tr>
                 <td>{{ competitor_data[0] }}</td>
                 <td>{{ competitor_data[1] }}</td>
-                <td>{{ competitor_data[2] }}</td>
             </tr>
-            {% endfor %}
+        {% endfor %}
         </table>
     </center>
-</body>
+</html>
+
