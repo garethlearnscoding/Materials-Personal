@@ -23,6 +23,10 @@ def round_2():
 def round_3():
     round_db = extraction(mode="round")
     return render_template("round_mean_template.html",Title="Round 3",data_set=round_db[3])
+@app.route("/r3")
+def round_3():
+    round_db = extraction(mode="round")
+    return render_template("round_mean_template.html",Title="Round 3",data_set=round_db[3])
     
 @app.route("/ms")
 def mean_scores():
