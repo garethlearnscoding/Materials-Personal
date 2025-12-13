@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Competition Search Page</title>
+  </head>
+  <body>
+    <form action="/query" method="post">
+      <label for="Comp_ID">Competition ID</label>
+      <input type="text" name="Comp_ID" placeholder="Competition ID" required />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    {% if data %}
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Member ID</th>
+        <th>Score</th>
+      </tr>
+      {% for member in data %}
+      <tr>
+        {% for i in member %}
+        <td>{{i}}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+  </body>
+</html>
