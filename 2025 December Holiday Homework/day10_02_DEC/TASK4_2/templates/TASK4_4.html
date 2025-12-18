@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Display</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Number of Copies</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+                {% for j in i %}
+                <td>
+                    {{j}}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Image</title>
+    </head>
+    <body>
+        <table>
+            {% for i in data %}
+            <tr>
+                {% for j in i %}
+                <td style="background-color:{{j}};height: 30px;width: 30px; "></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
