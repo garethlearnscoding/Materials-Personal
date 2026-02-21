@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Query</title>
+    </head>
+    <body>
+        <ol>
+            {% for i in data%}
+            <li>{{i[0]}}</li>
+            <ul>
+                <li>{{i[1]}}</li>
+                <li>{{i[2]}}</li>
+                <li>{{i[3]}}</li>
+            </ul>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
