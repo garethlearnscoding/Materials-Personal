@@ -1,6 +1,11 @@
 {
-    "git.ignoreLimitWarning": true,
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "main"
-    ]
+  "git.ignoreLimitWarning": true,
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "python-envs.pythonProjects": [
+    {
+      "path": ".",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ]
 }
