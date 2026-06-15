@@ -1,0 +1,11 @@
+type,number_of_eggs,cook_duration_minutes,rating
+boiled_soft,1,6,4.2
+boiled_medium,1,8,4.3
+boiled_hard,1,11,4.5
+scrambled_soft,2,5,4.6
+scrambled_firm,2,7,4.2
+fried_sunny_side_up,1,3,4.7
+fried_over_easy,1,4,4.4
+fried_over_hard,1,6,4.1
+omelette_plain,2,6,4.5
+poached_egg,1,4,4.6
